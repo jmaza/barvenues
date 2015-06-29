@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09FDA75289658AB209F09FCB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22E21279E4F070A22A7136A /* libPods.a */; };
+		268894871B3F3E070089A659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268894861B3F3E070089A659 /* Foundation.framework */; };
+		268894891B3F3E070089A659 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268894881B3F3E070089A659 /* CoreGraphics.framework */; };
+		2688948B1B3F3E070089A659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2688948A1B3F3E070089A659 /* UIKit.framework */; };
+		268894911B3F3E070089A659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2688948F1B3F3E070089A659 /* InfoPlist.strings */; };
+		268894931B3F3E070089A659 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 268894921B3F3E070089A659 /* main.m */; };
+		268894971B3F3E070089A659 /* JAMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 268894961B3F3E070089A659 /* JAMAppDelegate.m */; };
+		2688949A1B3F3E070089A659 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 268894981B3F3E070089A659 /* Main_iPhone.storyboard */; };
+		2688949D1B3F3E070089A659 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2688949B1B3F3E070089A659 /* Main_iPad.storyboard */; };
+		268894A01B3F3E070089A659 /* JAMMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2688949F1B3F3E070089A659 /* JAMMasterViewController.m */; };
+		268894A31B3F3E070089A659 /* JAMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 268894A21B3F3E070089A659 /* JAMDetailViewController.m */; };
+		268894A51B3F3E070089A659 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 268894A41B3F3E070089A659 /* Images.xcassets */; };
+		268894AC1B3F3E070089A659 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268894AB1B3F3E070089A659 /* XCTest.framework */; };
+		268894AD1B3F3E070089A659 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268894861B3F3E070089A659 /* Foundation.framework */; };
+		268894AE1B3F3E070089A659 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2688948A1B3F3E070089A659 /* UIKit.framework */; };
+		268894B61B3F3E070089A659 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 268894B41B3F3E070089A659 /* InfoPlist.strings */; };
+		268894B81B3F3E070089A659 /* BarVenuesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 268894B71B3F3E070089A659 /* BarVenuesTests.m */; };
+		820A85831B40FBF600DADA8A /* JAMVenuesNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A85821B40FBF600DADA8A /* JAMVenuesNetworkClient.m */; };
+		820A85861B4107AC00DADA8A /* JAMVenueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A85851B4107AC00DADA8A /* JAMVenueModel.m */; };
+		820A858C1B411BA200DADA8A /* JAMVenueDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 820A858B1B411BA200DADA8A /* JAMVenueDateFormatter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		268894AF1B3F3E070089A659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2688947B1B3F3E070089A659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 268894821B3F3E070089A659;
+			remoteInfo = BarVenues;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		268894831B3F3E070089A659 /* BarVenues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarVenues.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		268894861B3F3E070089A659 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		268894881B3F3E070089A659 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2688948A1B3F3E070089A659 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2688948E1B3F3E070089A659 /* BarVenues-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarVenues-Info.plist"; sourceTree = "<group>"; };
+		268894901B3F3E070089A659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		268894921B3F3E070089A659 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		268894941B3F3E070089A659 /* BarVenues-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BarVenues-Prefix.pch"; sourceTree = "<group>"; };
+		268894951B3F3E070089A659 /* JAMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAMAppDelegate.h; sourceTree = "<group>"; };
+		268894961B3F3E070089A659 /* JAMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAMAppDelegate.m; sourceTree = "<group>"; };
+		268894991B3F3E070089A659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2688949C1B3F3E070089A659 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		2688949E1B3F3E070089A659 /* JAMMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAMMasterViewController.h; path = Controllers/JAMMasterViewController.h; sourceTree = "<group>"; };
+		2688949F1B3F3E070089A659 /* JAMMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JAMMasterViewController.m; path = Controllers/JAMMasterViewController.m; sourceTree = "<group>"; };
+		268894A11B3F3E070089A659 /* JAMDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JAMDetailViewController.h; path = Controllers/JAMDetailViewController.h; sourceTree = "<group>"; };
+		268894A21B3F3E070089A659 /* JAMDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JAMDetailViewController.m; path = Controllers/JAMDetailViewController.m; sourceTree = "<group>"; };
+		268894A41B3F3E070089A659 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		268894AA1B3F3E070089A659 /* BarVenuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarVenuesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		268894AB1B3F3E070089A659 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		268894B31B3F3E070089A659 /* BarVenuesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BarVenuesTests-Info.plist"; sourceTree = "<group>"; };
+		268894B51B3F3E070089A659 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		268894B71B3F3E070089A659 /* BarVenuesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarVenuesTests.m; sourceTree = "<group>"; };
+		820A85811B40FBF600DADA8A /* JAMVenuesNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAMVenuesNetworkClient.h; path = Utils/JAMVenuesNetworkClient.h; sourceTree = "<group>"; };
+		820A85821B40FBF600DADA8A /* JAMVenuesNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAMVenuesNetworkClient.m; path = Utils/JAMVenuesNetworkClient.m; sourceTree = "<group>"; };
+		820A85841B4107AC00DADA8A /* JAMVenueModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAMVenueModel.h; path = Models/JAMVenueModel.h; sourceTree = "<group>"; };
+		820A85851B4107AC00DADA8A /* JAMVenueModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAMVenueModel.m; path = Models/JAMVenueModel.m; sourceTree = "<group>"; };
+		820A858A1B411BA200DADA8A /* JAMVenueDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JAMVenueDateFormatter.h; path = Utils/JAMVenueDateFormatter.h; sourceTree = "<group>"; };
+		820A858B1B411BA200DADA8A /* JAMVenueDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JAMVenueDateFormatter.m; path = Utils/JAMVenueDateFormatter.m; sourceTree = "<group>"; };
+		96431410852756BD59F61F90 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CEDE6355BC325F7F916CE970 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		E22E21279E4F070A22A7136A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		268894801B3F3E070089A659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268894891B3F3E070089A659 /* CoreGraphics.framework in Frameworks */,
+				2688948B1B3F3E070089A659 /* UIKit.framework in Frameworks */,
+				268894871B3F3E070089A659 /* Foundation.framework in Frameworks */,
+				09FDA75289658AB209F09FCB /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268894A71B3F3E070089A659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268894AC1B3F3E070089A659 /* XCTest.framework in Frameworks */,
+				268894AE1B3F3E070089A659 /* UIKit.framework in Frameworks */,
+				268894AD1B3F3E070089A659 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2688947A1B3F3E070089A659 = {
+			isa = PBXGroup;
+			children = (
+				2688948C1B3F3E070089A659 /* BarVenues */,
+				268894B11B3F3E070089A659 /* BarVenuesTests */,
+				268894851B3F3E070089A659 /* Frameworks */,
+				268894841B3F3E070089A659 /* Products */,
+				FFC7E98B583D7B50505CE424 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		268894841B3F3E070089A659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				268894831B3F3E070089A659 /* BarVenues.app */,
+				268894AA1B3F3E070089A659 /* BarVenuesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		268894851B3F3E070089A659 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				268894861B3F3E070089A659 /* Foundation.framework */,
+				268894881B3F3E070089A659 /* CoreGraphics.framework */,
+				2688948A1B3F3E070089A659 /* UIKit.framework */,
+				268894AB1B3F3E070089A659 /* XCTest.framework */,
+				E22E21279E4F070A22A7136A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2688948C1B3F3E070089A659 /* BarVenues */ = {
+			isa = PBXGroup;
+			children = (
+				8286C2801B3F43C400FDF0EA /* Utils */,
+				8286C27F1B3F43BE00FDF0EA /* Models */,
+				8286C27E1B3F43B800FDF0EA /* Views */,
+				8286C27D1B3F43B000FDF0EA /* Controllers */,
+				268894951B3F3E070089A659 /* JAMAppDelegate.h */,
+				268894961B3F3E070089A659 /* JAMAppDelegate.m */,
+				268894A41B3F3E070089A659 /* Images.xcassets */,
+				2688948D1B3F3E070089A659 /* Supporting Files */,
+			);
+			path = BarVenues;
+			sourceTree = "<group>";
+		};
+		2688948D1B3F3E070089A659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2688948E1B3F3E070089A659 /* BarVenues-Info.plist */,
+				2688948F1B3F3E070089A659 /* InfoPlist.strings */,
+				268894921B3F3E070089A659 /* main.m */,
+				268894941B3F3E070089A659 /* BarVenues-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		268894B11B3F3E070089A659 /* BarVenuesTests */ = {
+			isa = PBXGroup;
+			children = (
+				268894B71B3F3E070089A659 /* BarVenuesTests.m */,
+				268894B21B3F3E070089A659 /* Supporting Files */,
+			);
+			path = BarVenuesTests;
+			sourceTree = "<group>";
+		};
+		268894B21B3F3E070089A659 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				268894B31B3F3E070089A659 /* BarVenuesTests-Info.plist */,
+				268894B41B3F3E070089A659 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8286C27D1B3F43B000FDF0EA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2688949E1B3F3E070089A659 /* JAMMasterViewController.h */,
+				2688949F1B3F3E070089A659 /* JAMMasterViewController.m */,
+				268894A11B3F3E070089A659 /* JAMDetailViewController.h */,
+				268894A21B3F3E070089A659 /* JAMDetailViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8286C27E1B3F43B800FDF0EA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				268894981B3F3E070089A659 /* Main_iPhone.storyboard */,
+				2688949B1B3F3E070089A659 /* Main_iPad.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		8286C27F1B3F43BE00FDF0EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				820A85841B4107AC00DADA8A /* JAMVenueModel.h */,
+				820A85851B4107AC00DADA8A /* JAMVenueModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		8286C2801B3F43C400FDF0EA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				820A85811B40FBF600DADA8A /* JAMVenuesNetworkClient.h */,
+				820A85821B40FBF600DADA8A /* JAMVenuesNetworkClient.m */,
+				820A858A1B411BA200DADA8A /* JAMVenueDateFormatter.h */,
+				820A858B1B411BA200DADA8A /* JAMVenueDateFormatter.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		FFC7E98B583D7B50505CE424 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEDE6355BC325F7F916CE970 /* Pods.debug.xcconfig */,
+				96431410852756BD59F61F90 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		268894821B3F3E070089A659 /* BarVenues */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268894BB1B3F3E070089A659 /* Build configuration list for PBXNativeTarget "BarVenues" */;
+			buildPhases = (
+				64F553D9C8F150F1858DB9AC /* Check Pods Manifest.lock */,
+				2688947F1B3F3E070089A659 /* Sources */,
+				268894801B3F3E070089A659 /* Frameworks */,
+				268894811B3F3E070089A659 /* Resources */,
+				05FFB2547CAF110799F6FDD8 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BarVenues;
+			productName = BarVenues;
+			productReference = 268894831B3F3E070089A659 /* BarVenues.app */;
+			productType = "com.apple.product-type.application";
+		};
+		268894A91B3F3E070089A659 /* BarVenuesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 268894BE1B3F3E070089A659 /* Build configuration list for PBXNativeTarget "BarVenuesTests" */;
+			buildPhases = (
+				268894A61B3F3E070089A659 /* Sources */,
+				268894A71B3F3E070089A659 /* Frameworks */,
+				268894A81B3F3E070089A659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				268894B01B3F3E070089A659 /* PBXTargetDependency */,
+			);
+			name = BarVenuesTests;
+			productName = BarVenuesTests;
+			productReference = 268894AA1B3F3E070089A659 /* BarVenuesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2688947B1B3F3E070089A659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JAM;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jose;
+				TargetAttributes = {
+					268894A91B3F3E070089A659 = {
+						TestTargetID = 268894821B3F3E070089A659;
+					};
+				};
+			};
+			buildConfigurationList = 2688947E1B3F3E070089A659 /* Build configuration list for PBXProject "BarVenues" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2688947A1B3F3E070089A659;
+			productRefGroup = 268894841B3F3E070089A659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				268894821B3F3E070089A659 /* BarVenues */,
+				268894A91B3F3E070089A659 /* BarVenuesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		268894811B3F3E070089A659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2688949D1B3F3E070089A659 /* Main_iPad.storyboard in Resources */,
+				268894A51B3F3E070089A659 /* Images.xcassets in Resources */,
+				2688949A1B3F3E070089A659 /* Main_iPhone.storyboard in Resources */,
+				268894911B3F3E070089A659 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268894A81B3F3E070089A659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268894B61B3F3E070089A659 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05FFB2547CAF110799F6FDD8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64F553D9C8F150F1858DB9AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2688947F1B3F3E070089A659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				820A85861B4107AC00DADA8A /* JAMVenueModel.m in Sources */,
+				820A858C1B411BA200DADA8A /* JAMVenueDateFormatter.m in Sources */,
+				268894A01B3F3E070089A659 /* JAMMasterViewController.m in Sources */,
+				268894931B3F3E070089A659 /* main.m in Sources */,
+				268894A31B3F3E070089A659 /* JAMDetailViewController.m in Sources */,
+				820A85831B40FBF600DADA8A /* JAMVenuesNetworkClient.m in Sources */,
+				268894971B3F3E070089A659 /* JAMAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		268894A61B3F3E070089A659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268894B81B3F3E070089A659 /* BarVenuesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		268894B01B3F3E070089A659 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 268894821B3F3E070089A659 /* BarVenues */;
+			targetProxy = 268894AF1B3F3E070089A659 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2688948F1B3F3E070089A659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268894901B3F3E070089A659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		268894981B3F3E070089A659 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268894991B3F3E070089A659 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2688949B1B3F3E070089A659 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2688949C1B3F3E070089A659 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		268894B41B3F3E070089A659 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				268894B51B3F3E070089A659 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		268894B91B3F3E070089A659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		268894BA1B3F3E070089A659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		268894BC1B3F3E070089A659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEDE6355BC325F7F916CE970 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarVenues/BarVenues-Prefix.pch";
+				INFOPLIST_FILE = "BarVenues/BarVenues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		268894BD1B3F3E070089A659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96431410852756BD59F61F90 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarVenues/BarVenues-Prefix.pch";
+				INFOPLIST_FILE = "BarVenues/BarVenues-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		268894BF1B3F3E070089A659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BarVenues.app/BarVenues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarVenues/BarVenues-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BarVenuesTests/BarVenuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		268894C01B3F3E070089A659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BarVenues.app/BarVenues";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BarVenues/BarVenues-Prefix.pch";
+				INFOPLIST_FILE = "BarVenuesTests/BarVenuesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2688947E1B3F3E070089A659 /* Build configuration list for PBXProject "BarVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268894B91B3F3E070089A659 /* Debug */,
+				268894BA1B3F3E070089A659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268894BB1B3F3E070089A659 /* Build configuration list for PBXNativeTarget "BarVenues" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268894BC1B3F3E070089A659 /* Debug */,
+				268894BD1B3F3E070089A659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		268894BE1B3F3E070089A659 /* Build configuration list for PBXNativeTarget "BarVenuesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				268894BF1B3F3E070089A659 /* Debug */,
+				268894C01B3F3E070089A659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2688947B1B3F3E070089A659 /* Project object */;
+}
